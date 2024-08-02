@@ -1,8 +1,9 @@
-libs = -lglfw -lGL
+lgfw = -lglfw -lGL
+leif = -lleif -lclipboard -lm -lxcb
 CC = gcc
 
 app: main.c
-	- $(CC) -o todo main.c $(libs)
-	
+	- $(CC) -o todo main.c $(lgfw) $(leif)
+
 clean:
 	- rm -f todo
