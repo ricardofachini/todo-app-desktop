@@ -48,8 +48,8 @@ int main() {
         lf_end();
 
 
-        glfwSwapBuffers(window);
         glfwPollEvents();
+        glfwSwapBuffers(window);
     }
 
     lf_terminate();
